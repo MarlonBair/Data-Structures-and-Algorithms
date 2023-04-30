@@ -28,7 +28,7 @@ public class PascalsTriangle {
                 newRow.add(triangle.get(r-1).get(c-1) + triangle.get(r-1).get(c));
             }
             
-            // Add final 1 to row, with the exception that it's the first row
+            // Add final 1 to row, with the exception of the first row
             if(r != 0) { newRow.add(1); }
             
             triangle.add(newRow);
