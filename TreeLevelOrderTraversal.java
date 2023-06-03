@@ -5,9 +5,7 @@
  * (i.e., from left to right, level by level from leaf to root).
  */
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class TreeLevelOrderTraversal {
     
@@ -32,7 +30,7 @@ public class TreeLevelOrderTraversal {
 
         if(root == null) { return list; }
 
-        // Utilize queue for a BFS at each sublevel of tree
+        // Utilize queue to perform a BFS
         Queue<TreeNode> q = new LinkedList<>();
 
         q.add(root);
@@ -40,7 +38,7 @@ public class TreeLevelOrderTraversal {
         // Using a BFS, add each sublevel of tree to total list
         while(!q.isEmpty()) {
             List<Integer> currentLevel = new ArrayList<Integer>();
-            
+
             int levelSize = q.size();                               
             for(int i = 0; i < levelSize; i++) {
 
