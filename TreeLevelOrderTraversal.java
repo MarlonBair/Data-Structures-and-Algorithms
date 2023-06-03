@@ -1,8 +1,9 @@
 /**
  * @author Marlon Bair 6/2/23
  * 
- * Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values. 
- * (i.e., from left to right, level by level from leaf to root).
+ * Given the root of a binary tree, return the level order traversal of its nodes' values. 
+ * (i.e., from left to right, level by level).
+ * 
  */
 
 import java.util.*;
